@@ -6,8 +6,7 @@ console.log(galleryItems);
 const gallery = document.querySelector('.gallery');
 
 
-const makeGalleryMarkup = image => {
-  const { preview, original, description } = image;
+const makeGalleryMarkup = ({ preview, original, description }) => {
 
   return `<div class="gallery__item">
   <a class="gallery__link" href="${original}">
