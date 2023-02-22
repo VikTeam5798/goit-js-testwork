@@ -20,7 +20,7 @@ const players = [
   { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 ];
-console.table(players);
+// console.table(players);
 
 /*
  * Получаем массив имён всех игроков
@@ -29,11 +29,12 @@ console.table(players);
 const playerNames = players.map(player => player.name);
 // console.log('playerNames', playerNames);
 
+
 const playerIds = players.map(player => player.id);
 // console.log('playerIds', playerIds);
 
-// const res = players.map(({ name, online }) => ({ name, online }));
-// console.log('res', res);
+const res = players.map(({ name, online }) => ({ name, online }));
+console.table(res);
 
 /*
  * Увеличиваем кол-во поинтов каждого игрока на 10%

@@ -29,15 +29,15 @@ const playlist = {
   },
 };
 
-console.log(playlist.getTrackCount());
+// console.log(playlist.getTrackCount());
 
-playlist.changeName('Новое имя');
+playlist.changeName('Мой новый супер плейлист');
 
 playlist.addTrack('новый трек 1');
-console.log(playlist.getTrackCount());
+// console.log(playlist.getTrackCount());
 
 playlist.addTrack('новый трек 2');
-console.log(playlist.getTrackCount());
+// console.log(playlist.getTrackCount());
 
 playlist.updateRating(4);
 
