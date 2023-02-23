@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom right, yellow, red);
+    background-image: linear-gradient(to right, #2C75FF, #061389);
 }
 
 .wrapper {
@@ -28,7 +28,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1677091539 .shape-fill {
-    fill: #ffffff;
+    fill: #5181db;
 }
 
 .primary-title {
@@ -43,9 +43,11 @@ body {
 }
 
 .button-list__item {
+    display: block;
     text-decoration: none;
-    background-color: #1f7a1f;
-    color: #2C75FF;
+    background-color: #2C75FF;
+    color: #061389;
+    border: 1px solid black;
     padding: 10px 15px;
     transition: background-color 250ms linear, color 250ms linear;
 
@@ -53,6 +55,6 @@ body {
 
 .button-list__item:hover,
 .button-list__item:focus {
-    background-color: #2C75FF;
-    color: #1f7a1f;
+    background-color: #061389;
+    color: #2C75FF;
 }
