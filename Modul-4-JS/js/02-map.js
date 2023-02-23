@@ -20,11 +20,11 @@ const players = [
   { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 ];
-// console.table(players);
+console.table(players);
 
 /*
- * Получаем массив имён всех игроков
- */
+* Получаем массив имён всех игроков
+*/
 
 const playerNames = players.map(player => player.name);
 // console.log('playerNames', playerNames);
@@ -33,12 +33,12 @@ const playerNames = players.map(player => player.name);
 const playerIds = players.map(player => player.id);
 // console.log('playerIds', playerIds);
 
-const res = players.map(({ name, online }) => ({ name, online }));
-console.table(res);
+const res = players.map(({ name, online }) => { return { name: name, online: online } });
+// console.table(res);
 
 /*
- * Увеличиваем кол-во поинтов каждого игрока на 10%
- */
+* Увеличиваем кол-во поинтов каждого игрока на 10%
+*/
 
 const upatedPlayers = players.map(player => ({
   ...player,
@@ -49,25 +49,24 @@ const upatedPlayers = players.map(player => ({
 // console.log(upatedPlayers);
 
 /*
- * Увеличиваем кол-во часов игрока по id
- */
+* Увеличиваем кол-во часов игрока по id
+*/
 
 const playerIdToUpdate = 'player-3';
 
-const updatedPlayers = players.map(player => {
-  if (playerIdToUpdate === player.id) {
-    return {
-      ...player,
-      timePlayed: player.timePlayed + 100,
-    };
-  }
+// const updatedPlayers = players.map(player => {
+//   if (playerIdToUpdate === player.id) {
+//     return {
+//       ...player,
+//      timePlayed: player.timePlayed + 100, 
+//     }
+//   }
+//   return player
+// });
 
-  return player;
-});
-
-// const updatedPlayers = players.map(player =>
-//   playerIdToUpdate === player.id
-//     ? { ...player, timePlayed: player.timePlayed + 100 }
-//     : player,
-// );
-// console.table(updatedPlayers);
+const updatedPlayers = players.map(player =>
+  playerIdToUpdate === player.id
+    ? { ...player, timePlayed: player.timePlayed + 100 }
+    : player,
+);
+console.table(updatedPlayers);

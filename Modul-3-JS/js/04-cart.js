@@ -17,11 +17,14 @@
 const cart = {
   items: [],
   getItems() {
-    return this.items;
+    return this.items
   },
   add(product) {
+    // console.table(this.items); 
+
     for (const item of this.items) {
       if (item.name === product.name) {
+        // console.log(quantity);
         item.quantity += 1;
         return;
       }
@@ -31,61 +34,82 @@ const cart = {
       ...product,
       quantity: 1,
     };
-
-    this.items.push(newProduct);
+     
+    this.items.push(newProduct)
   },
   remove(productName) {
     const { items } = this;
 
     for (let i = 0; i < items.length; i += 1) {
-      const item = items[i];
+    const { name, price } = items[i];
+      // console.log(`${name}: ${price} (${i})`);
+  
+      if (productName === name) {
+        // console.log(`Нашли элемент которы нужно удалить: ${productName}: ${price} (${i})`);
 
-      if (productName === item.name) {
-        console.log('нашли такой продукт ', productName);
-        console.log('индекс: ', i);
-
-        items.splice(i, 1);
+        items.splice(i, 1)
       }
-    }
+}
+
   },
+
   clear() {
     this.items = [];
   },
+
   countTotalPrice() {
     const { items } = this;
+    // console.log(items);
     let total = 0;
-
     for (const { price, quantity } of items) {
+      // console.log(price);
       total += price * quantity;
     }
-
-    return total;
+    return total
   },
-  increaseQuantity(productName) {},
-  decreaseQuantity(productName) {},
+
+  increaseQuantity(productName) {
+    for (const item of this.items) {
+      if (item.name === productName) {
+        item.quantity += 1;
+        return;
+      }
+    }
+  },
+  decreaseQuantity(productName) {
+    for (const item of this.items) {
+      if (item.name === productName) {
+        item.quantity -= 1;
+        return;
+      }
+    }
+  
+  },
 };
 
-console.log(cart.getItems());
+// console.log(cart.getItems());
 
 cart.add({ name: '🍎', price: 50 });
-cart.add({ name: '🍇', price: 60 });
+cart.add({ name: '🍇', price: 70 });
 cart.add({ name: '🍋', price: 60 });
+cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍓', price: 110 });
 cart.add({ name: '🍋', price: 60 });
-cart.add({ name: '🍓', price: 110 });
-cart.add({ name: '🍓', price: 110 });
-cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍇', price: 70 });
+cart.add({ name: '🍇', price: 70 });
 
 console.table(cart.getItems());
 
 console.log('Total: ', cart.countTotalPrice());
 
-cart.remove('🍇');
-console.table(cart.getItems());
+// cart.remove('🍋');
+// console.table(cart.getItems());
 
 // cart.clear();
 // console.log(cart.getItems());
 
-console.log('Total: ', cart.countTotalPrice());
+// console.log('Total: ', cart.countTotalPrice());
 
 // cart.increaseQuantity('🍎');
 // console.table(cart.getItems());

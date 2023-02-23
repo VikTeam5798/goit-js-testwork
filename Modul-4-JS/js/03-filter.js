@@ -1,5 +1,5 @@
 /*
- * Array.prototype.filter()
+ * Array.prototype.filter( () => {} )
  * - Поэлементо перебирает оригинальный массив
  * - Возвращает новый массив (с элементами или пустой)
  * - Добавляет в возвращаемый массив элементы которые удовлетворяют условию коллбек-функции
@@ -9,7 +9,7 @@
 
 const numbers = [5, 10, 15, 20, 25];
 
-const filteredNumbers = numbers.filter(number => number < 10 || number > 20);
+const filteredNumbers = numbers.filter(number => number <= 10 || number > 20);
 // console.log(filteredNumbers);
 
 const players = [
@@ -23,20 +23,20 @@ const players = [
 /*
  * Получаем массив всех онлайн игроков
  */
-
-const onlinePlayers = players.filter(({ online }) => online);
+// const onlinePlayers = players.filter(player => player.online);
+const onlinePlayers = players.filter(({online}) => online);
 // console.table(onlinePlayers);
 
 /*
  * Получаем массив всех оффлайн игроков
  */
 
-const offlinePlayers = players.filter(player => !player.online);
+const offlinePlayers = players.filter(({online}) => !online);
 // console.table(offlinePlayers);
 
 /*
  * Получаем список хардкорных игроков с временем больше 250
  */
 
-const hardcorePlayers = players.filter(player => player.timePlayed > 250);
+const hardcorePlayers = players.filter(player => player.timePlayed > 150);
 // console.table(hardcorePlayers);
