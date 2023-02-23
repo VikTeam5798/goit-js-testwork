@@ -1,0 +1,58 @@
+html {
+    position: relative;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, yellow, red);
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.custom-shape-divider-bottom-1677091539 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1677091539 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 315px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1677091539 .shape-fill {
+    fill: #ffffff;
+}
+
+.primary-title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.button-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.button-list__item {
+    text-decoration: none;
+    background-color: #1f7a1f;
+    color: #2C75FF;
+    padding: 10px 15px;
+    transition: background-color 250ms linear, color 250ms linear;
+
+}
+
+.button-list__item:hover,
+.button-list__item:focus {
+    background-color: #2C75FF;
+    color: #1f7a1f;
+}
