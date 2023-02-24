@@ -7,7 +7,12 @@
 
 const numbers = [5, 10, 15, 20, 25];
 
-const total = numbers.reduce((acc, number) => acc + number, 0);
+const total = numbers.reduce((total, number) => {
+  // console.log(`Number: ${number}`);
+  // console.log(`Total: ${total}`);
+
+  return total + number;
+}, 0);
 // console.log(total);
 
 // accumulator = 0 -> number = 5 -> return 0 + 5
@@ -27,8 +32,8 @@ const salary = {
 };
 
 const totalSalary = Object.values(salary).reduce(
-  (total, value) => total + value,
-  0,
+  (total, number) => total + number,
+  0
 );
 // console.log(totalSalary);
 
@@ -37,17 +42,16 @@ const totalSalary = Object.values(salary).reduce(
  */
 
 const players = [
-  { id: 'player-1', name: 'Mango', timePlayed: 310, online: false },
-  { id: 'player-2', name: 'Poly', timePlayed: 470, online: true },
-  { id: 'player-3', name: 'Kiwi', timePlayed: 230, online: true },
-  { id: 'player-4', name: 'Ajax', timePlayed: 150, online: false },
-  { id: 'player-5', name: 'Chelsey', timePlayed: 80, online: true },
+  { id: "player-1", name: "Mango", timePlayed: 310, online: false },
+  { id: "player-2", name: "Poly", timePlayed: 470, online: true },
+  { id: "player-3", name: "Kiwi", timePlayed: 230, online: true },
+  { id: "player-4", name: "Ajax", timePlayed: 150, online: false },
+  { id: "player-5", name: "Chelsey", timePlayed: 80, online: true },
 ];
 
-const totalTimePlayed = players.reduce(
-  (totalTime, player) => totalTime + player.timePlayed,
-  0,
-);
+const totalTimePlayed = players.reduce((totalTime, player) => {
+  return totalTime + player.timePlayed;
+}, 0);
 
 // console.log(totalTimePlayed);
 
@@ -55,15 +59,14 @@ const totalTimePlayed = players.reduce(
  * Считаем общую сумму товаров корзины
  */
 const cart = [
-  { label: 'Apples', price: 100, quantity: 2 },
-  { label: 'Bananas', price: 120, quantity: 3 },
-  { label: 'Lemons', price: 70, quantity: 4 },
+  { label: "Apples", price: 100, quantity: 2 },
+  { label: "Bananas", price: 120, quantity: 3 },
+  { label: "Lemons", price: 70, quantity: 4 },
 ];
 
-const totalAmount = cart.reduce(
-  (total, { price, quantity }) => total + price * quantity,
-  0,
-);
+const totalAmount = cart.reduce((totalPrice, { price, quantity }) => {
+  return totalPrice + price * quantity;
+}, 0);
 
 // console.log(totalAmount);
 
@@ -71,15 +74,19 @@ const totalAmount = cart.reduce(
  * Собираем все теги из твитов
  */
 const tweets = [
-  { id: '000', likes: 5, tags: ['js', 'nodejs'] },
-  { id: '001', likes: 2, tags: ['html', 'css'] },
-  { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
-  { id: '003', likes: 8, tags: ['css', 'react'] },
-  { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+  { id: "000", likes: 5, tags: ["js", "nodejs"] },
+  { id: "001", likes: 2, tags: ["html", "css"] },
+  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+  { id: "003", likes: 8, tags: ["css", "react"] },
+  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
 ];
 
-const allTags = tweets.reduce((acc, tweet) => [...acc, ...tweet.tags], []);
-console.log(allTags);
+const allTags = tweets.reduce((tags, tweet) => {
+  // tags.push(...tweet.tags);
+  // return tags;
+  return [...tags, ...tweet.tags];
+}, []);
+// console.log(allTags);
 
 // acc = [], tweet.tags = ['js', 'nodejs'] return [...[], ...['js', 'nodejs']]
 // acc = ['js', 'nodejs'] tweet.tags ['html', 'css']
@@ -94,7 +101,6 @@ console.log(allTags);
 
 //   if (acc[tag]) {
 //     acc[tag] += 1;
-
 //     return acc;
 //   }
 
@@ -102,14 +108,23 @@ console.log(allTags);
 
 //   return acc;
 // }, {});
+// console.log(tagsStats);
 
-const tagsStats = allTags.reduce((acc, tag) => {
-  return {
-    ...acc,
-    [tag]: acc[tag] ? acc[tag] + 1 : 1,
-  };
-}, {});
+const tagsStats = allTags.reduce(
+  (acc, tag) => ({ ...acc, [tag]: acc[tag] ? acc[tag] + 1 : 1 }),
+  {}
+);
 // console.log(tagsStats);
 
 // если свойство с ключом tag есть. увеличить его значение на 1
 // если свойствоства нет с таким ключом что в tag, сделать и записать 1
+
+// const user = {
+//   job: "Deliver",
+//   name: "Mango",
+// };
+
+// const keygo = "name";
+// const keyno = "job";
+// console.log(user[keygo]);
+// console.log(user[keyno]);

@@ -21,7 +21,7 @@ const isAllOnline = players.every(player => player.online);
  * - Возвращает true если хотя бы один элемент массива удовлетворяет условию
  */
 const isAnyOnline = players.some(player => player.online);
-// console.log('isAnyOnline: ', isAnyOnline);
+console.log('isAnyOnline: ', isAnyOnline);
 
 const anyHardcorePlayers = players.some(player => player.timePlayed > 400);
 // console.log('anyHardcorePlayers: ', anyHardcorePlayers);
