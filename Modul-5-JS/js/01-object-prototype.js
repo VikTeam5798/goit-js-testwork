@@ -21,13 +21,13 @@
 
 // console.log(objA.z);
 
-// console.log('objA', objA);
+// console.log("objA", objA);
 
-// console.log(objA.hasOwnProperty('x'));
+// console.log(objA.hasOwnProperty("x"));
 
-// const dummyObj = Object.create({ message: 'Это свойство объекта протортипа' });
-// dummyObj.message = 'Это собственное свойство объекта';
-// console.log('dummyObj', dummyObj);
+// const dummyObj = Object.create({ message: "Это свойство объекта протортипа" });
+// dummyObj.message = "Это собственное свойство объекта";
+// console.log("dummyObj", dummyObj);
 
 // console.log(dummyObj.message);
 
@@ -44,6 +44,6 @@
 
 // const objA = Object.create({ z: 5 });
 // objA.y = 100;
-// console.log('objA', objA);
+// console.log("objA", objA);
 
 // console.log(objA.x);

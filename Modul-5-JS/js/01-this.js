@@ -2,19 +2,19 @@
  * Функция это частный случай объекта -> ССЫЛОЧНЫЙ ТИП
  */
 
-// console.log('[] === []: ', [] === []);
-// console.log('{} === {}: ', {} === {});
+// console.log("[] === []: ", [] === []);
+// console.log("{} === {}: ", {} === {});
 // console.log(
-//     'function() {} === function() {}: ',
-//     function () {} === function () {},
+//   "function() {} === function() {}: ",
+//   function () {} === function () {}
 // );
 
 // const fnA = function () {
-//     console.log('hello');
+//   console.log("hello");
 // };
 
 // const fnB = fnA;
-// console.log('fnB === fnA: ', fnB === fnA);
+// console.log("fnB === fnA: ", fnB === fnA);
 
 /*
  * Контекст (this)
@@ -27,10 +27,10 @@
  */
 
 // const user = {
-//     tag: 'Mango',
-//     showTag() {
-//         console.log('showTag -> this', this);
-//     },
+//   tag: "Mango",
+//   showTag() {
+//     console.log("showTag -> this", this);
+//   },
 // };
 
 // user.showTag();
@@ -42,7 +42,7 @@
  */
 
 // const foo = function () {
-//     console.log('foo -> this', this);
+//   console.log("foo -> this", this);
 // };
 
 // foo();
@@ -53,18 +53,18 @@
  */
 
 // const showTag = function () {
-//     console.log('showTag -> this', this);
-//     console.log('showTag -> this.tag', this.tag);
+//   console.log("showTag -> this", this);
+//   console.log("showTag -> this.tag", this.tag);
 // };
 
-// showTag();
+// // showTag();
 
 // const user = {
-//     tag: 'Mango',
+//   tag: "Mango",
 // };
 
 // user.showUserTag = showTag;
-// console.log('user', user);
+// console.log("user", user);
 
 // user.showUserTag();
 
@@ -73,14 +73,14 @@
  */
 
 // const user = {
-//     tag: 'Mango',
-//     showTag() {
-//         console.log('showTag -> this', this);
-//         console.log('showTag -> this.tag', this.tag);
-//     },
+//   tag: "Mango",
+//   showTag() {
+//     console.log("showTag -> this", this);
+//     console.log("showTag -> this.tag", this.tag);
+//   },
 // };
 
-// user.showTag();
+// // user.showTag();
 
 // const outerShowTag = user.showTag;
 
@@ -121,13 +121,13 @@
  */
 
 // const book = {
-//     title: 'React for beginners',
-//     showThis() {
-//         console.log('showThis -> this', this);
-//     },
-//     showTitle() {
-//         console.log('showTitle -> this.title', this.title);
-//     },
+//   title: "React for beginners",
+//   showThis() {
+//     console.log("showThis -> this", this);
+//   },
+//   showTitle() {
+//     console.log("showTitle -> this.title", this.title);
+//   },
 // };
 
 // book.showThis(); // Какой this ???
@@ -170,41 +170,41 @@
  */
 
 // const makeChangeColor = function () {
-//     const changeColor = function (color) {
-//         console.log('changeColor -> this', this);
-//     };
+//   const changeColor = function (color) {
+//     console.log("changeColor -> this", this);
+//   };
 
-//     return changeColor;
+//   return changeColor;
 // };
 
 // const updateColor = makeChangeColor();
-// updateColor('yellow'); // Какой this ???
+// updateColor("yellow"); // Какой this ???
 
 // const hat = {
-//     color: 'blue',
-//     updateColor: updateColor,
+//   color: "blue",
+//   updateColor,
 // };
 
-// hat.updateColor('orange'); // Какой this ???
+// hat.updateColor("orange"); // Какой this ???
 
 /*
  * Тренируемся 5
  */
 
 const counter = {
-    value: 0,
-    increment(value) {
-        console.log('increment -> this', this);
-        this.value += value;
-    },
-    decrement(value) {
-        console.log('decrement -> this', this);
-        this.value -= value;
-    },
+  value: 0,
+  increment(value) {
+    console.log("increment -> this", this);
+    this.value += value;
+  },
+  decrement(value) {
+    console.log("decrement -> this", this);
+    this.value -= value;
+  },
 };
 
 const updateCounter = function (value, operation) {
-    operation(value);
+  operation(value);
 };
 
 updateCounter(10, counter.increment);

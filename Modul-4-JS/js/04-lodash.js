@@ -13,13 +13,13 @@
  */
 
 const user = {
-    name: 'mango',
-    location: {
-        city: 'Lviv',
-    },
+  name: "mango",
+  location: {
+    city: "Kharkov",
+  },
 };
 
-// console.log(_.get(user, 'location.city'));
+// console.log(_.get(user, "location.city"));
 
 // console.log(user.location.city);
 
@@ -33,7 +33,7 @@ const user = {
  * union()
  */
 
-// console.log(_.union([1, 2, 3], [3, 4, 5]));
+// console.log(_.union([1, 2, 3, 4, 5], [3, 4, 5, 6, 7, 8]));
 
 /*
  * range()
@@ -50,11 +50,11 @@ const user = {
  */
 
 const players = [
-    { id: 'player-1', name: 'Mango', timePlayed: 310, online: false },
-    { id: 'player-2', name: 'Poly', timePlayed: 470, online: true },
-    { id: 'player-3', name: 'Aiwi', timePlayed: 230, online: true },
-    { id: 'player-4', name: 'Ajax', timePlayed: 150, online: false },
-    { id: 'player-5', name: 'Chelsey', timePlayed: 80, online: true },
+  { id: "player-1", name: "Mango", timePlayed: 310, online: false },
+  { id: "player-2", name: "Poly", timePlayed: 470, online: true },
+  { id: "player-3", name: "Aiwi", timePlayed: 230, online: true },
+  { id: "player-4", name: "Ajax", timePlayed: 150, online: false },
+  { id: "player-5", name: "Chelsey", timePlayed: 80, online: true },
 ];
 
 // console.log(_.sumBy(players, player => player.timePlayed));
@@ -73,10 +73,10 @@ const players = [
  * minBy() и maxBy()
  */
 
-// console.log(_.minBy(players, player => player.timePlayed));
+// console.log(_.maxBy(players, (player) => player.timePlayed));
 
 /*
  * camelCase(), capitalize(), kebabCase(), lowerCase(), upperCase()
  */
 
-console.log(_.kebabCase(' a b c '));
+// console.log(_.kebabCase(" a b c "));

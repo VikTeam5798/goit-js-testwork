@@ -27,22 +27,22 @@
 // showThis();
 
 const changeColor = function (color) {
-    console.log('changeColor -> this', this);
-    this.color = color;
+  console.log("changeColor -> this", this);
+  this.color = color;
 };
 
 const hat = {
-    color: 'black',
+  color: "black",
 };
 
-// changeColor.call(hat, 'orange');
+// changeColor.call(hat, "orange");
 // console.log(hat);
 
 const sweater = {
-    color: 'green',
+  color: "green",
 };
 
-// changeColor.call(sweater, 'blue');
+// changeColor.call(sweater, "blue");
 // console.log(sweater);
 
 /*
@@ -52,31 +52,31 @@ const sweater = {
 const changeHatColor = changeColor.bind(hat);
 const changeSweaterColor = changeColor.bind(sweater);
 
-// changeHatColor('yellow');
+// changeHatColor("yellow");
 // console.log(hat);
 
-// changeSweaterColor('red');
+// changeSweaterColor("red");
 // console.log(sweater);
 
 /*
  * counter
  */
 
-const counter = {
-    value: 0,
-    increment(value) {
-        console.log('increment -> this', this);
-        this.value += value;
-    },
-    decrement(value) {
-        console.log('decrement -> this', this);
-        this.value -= value;
-    },
-};
+// const counter = {
+//   value: 0,
+//   increment(value) {
+//     console.log("increment -> this", this);
+//     this.value += value;
+//   },
+//   decrement(value) {
+//     console.log("decrement -> this", this);
+//     this.value -= value;
+//   },
+// };
 
-const updateCounter = function (value, operation) {
-    operation(value);
-};
+// const updateCounter = function (value, operation) {
+//   operation(value);
+// };
 
 // updateCounter(10, counter.increment.bind(counter));
 // updateCounter(5, counter.decrement.bind(counter));

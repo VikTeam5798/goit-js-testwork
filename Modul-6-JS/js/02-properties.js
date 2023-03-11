@@ -1,4 +1,4 @@
-const magicBtn = document.querySelector('.js-magic-btn');
+const magicBtn = document.querySelector(".js-magic-btn");
 
 /*
  * Свойства элемента (hero)
@@ -6,16 +6,20 @@ const magicBtn = document.querySelector('.js-magic-btn');
  * - Текст и textContent
  * https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=480
  */
+magicBtn.addEventListener("click", () => {
+  const imageEl = document.querySelector(".hero__image");
+  // console.log('imageEl', imageEl);
 
-const imageEl = document.querySelector('.hero__image');
-// console.log('imageEl', imageEl);
-imageEl.src =
-  'https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=480';
-imageEl.alt = 'Это новый котик';
-
-const heroTitleEl = document.querySelector('.hero__title');
-// console.log('heroTitleEl', heroTitleEl);
-heroTitleEl.textContent = 'Я сладкий пирожочек!';
+  const heroTitleEl = document.querySelector(".hero__title");
+  // console.log('heroTitleEl', heroTitleEl);
+  heroTitleEl.textContent = "Я сладкий пирожочек!";
+  imageEl.src =
+    "https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=480";
+  imageEl.alt = "Это новый котик";
+  const inputRef = document.querySelector(".js-input");
+  console.log(inputRef);
+  inputRef.value = "zdarovaNaH";
+});
 
 /*
  * Атрибуты
@@ -32,6 +36,6 @@ heroTitleEl.textContent = 'Я сладкий пирожочек!';
 /*
  * Data-атрибуты
  */
-const actions = document.querySelectorAll('.js-actions button');
+const actions = document.querySelectorAll(".js-actions button");
 console.log(actions);
 console.log(actions[2].dataset.action);
