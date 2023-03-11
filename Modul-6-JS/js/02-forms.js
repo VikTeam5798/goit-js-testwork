@@ -5,9 +5,9 @@
  * - Класс FormData - https://developer.mozilla.org/en-US/docs/Web/API/FormData
  */
 
-const form = document.querySelector('.js-register-form');
+const form = document.querySelector(".js-register-form");
 
-form.addEventListener('submit', onFormSubmit);
+form.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
   event.preventDefault();
@@ -17,7 +17,6 @@ function onFormSubmit(event) {
   console.log(formData);
 
   formData.forEach((value, name) => {
-    console.log('onFormSubmit -> name', name);
-    console.log('onFormSubmit -> value', value);
+    console.log(`${name}: ${value}`);
   });
 }

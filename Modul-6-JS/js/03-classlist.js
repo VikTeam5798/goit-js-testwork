@@ -1,4 +1,4 @@
-const magicBtn = document.querySelector('.js-magic-btn');
+const magicBtn = document.querySelector(".js-magic-btn");
 /*
  * Интерфейс classList
  * - add(класс)
@@ -8,11 +8,13 @@ const magicBtn = document.querySelector('.js-magic-btn');
  * - contains(класс)
  */
 
-const currentPageUrl = '/contact';
+magicBtn.addEventListener("click", () => {
+  linkEl.classList.add("site-nav__link--current");
+});
+const currentPageUrl = "/portfolio";
 
 const linkEl = document.querySelector(
-  `.site-nav__link[href="${currentPageUrl}"]`,
+  `.site-nav__link[href="${currentPageUrl}"]`
 );
 
-console.log(linkEl);
-linkEl.classList.add('site-nav__link--current');
+console.log(linkEl.contains("site-nav__link"));
