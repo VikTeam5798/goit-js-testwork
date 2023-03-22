@@ -1,0 +1,19 @@
+{
+  "name": "goit-js-testwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VikTeam5798/goit-js-testwork.git"
+  },
+  "author": "ViktorVitalievich (VikTeam)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VikTeam5798/goit-js-testwork/issues"
+  },
+  "homepage": "https://github.com/VikTeam5798/goit-js-testwork"
+}

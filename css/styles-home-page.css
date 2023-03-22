@@ -3,32 +3,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to right, #2C75FF, #061389);
-}
-
-.wrapper {
-    height: 100vh;
-}
-
-.custom-shape-divider-bottom-1677091539 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1677091539 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 315px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1677091539 .shape-fill {
-    fill: #5181db;
+    margin: 0;
 }
 
 .primary-title {
