@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Событие сабмита формы</title>
+    <link rel="stylesheet" href="/Modul-5-JS/index5-prototype.77a9bc14.css">
+    <link rel="stylesheet" href="/Modul-6-JS/index6.101ee4ef.css">
+    <link rel="stylesheet" href="/index.ae91296d.css">
+  </head>
+  <body>
+    <ul class="button-list">
+      <li><a class="button-list__item" href="/Modul-6-JS/index6.html">На главную</a></li>
+    </ul>
+
+    <!-- Событие сабмита формы -->
+    <form class="js-register-form" autocomplete="off">
+      <div role="group">
+        <label>
+          Почта
+          <input type="email" name="email">
+        </label>
+        <label>
+          Пароль
+          <input name="password" type="password">
+        </label>
+      </div>
+
+      <br>
+      <div role="group">
+        <b>Тип подписки:</b>
+        <label>
+          <input type="radio" name="subscription" value="free">
+          Free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="basic">
+          Basic
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro">
+          Pro
+        </label>
+      </div>
+
+      <br>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <script src="/Modul-6-JS/02-forms.4bc8d79d.js" defer=""></script>
+  </body>
+</html>
