@@ -557,7 +557,7 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"9Tfq5":[function(require,module,exports) {
-// import "../css/common.css";
+var _commonCss = require("../css/common.css");
 /*
  * Метод window.setTimeout(callback, delay, args)
  */ // console.log("До вызова setTimeout");
@@ -587,6 +587,6 @@ if (shouldCancelTimer) {
     }, 1000, 1000);
 }
 
-},{}]},["xtIX0","9Tfq5"], "9Tfq5", "parcelRequirea919")
+},{"../css/common.css":"9eCMt"}],"9eCMt":[function() {},{}]},["xtIX0","9Tfq5"], "9Tfq5", "parcelRequirea919")
 
 //# sourceMappingURL=01-timeout.0c4dd19e.js.map

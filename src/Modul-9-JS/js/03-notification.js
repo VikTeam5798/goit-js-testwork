@@ -1,4 +1,4 @@
-// import "../css/common.css";
+import "../css/common.css";
 
 /**
  * - Показываем и скрываем добавляя/удаляя класс is-visible

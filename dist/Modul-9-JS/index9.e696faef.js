@@ -558,7 +558,8 @@ function hmrAccept(bundle, id) {
 
 },{}],"5l8rW":[function(require,module,exports) {
 var _commonCss = require("./css/common.css");
+var _common2Css = require("./css/common2.css");
 
-},{"./css/common.css":"9eCMt"}],"9eCMt":[function() {},{}]},["04Qfq","5l8rW"], "5l8rW", "parcelRequirea919")
+},{"./css/common.css":"9eCMt","./css/common2.css":"5j4Cu"}],"9eCMt":[function() {},{}],"5j4Cu":[function() {},{}]},["04Qfq","5l8rW"], "5l8rW", "parcelRequirea919")
 
 //# sourceMappingURL=index9.e696faef.js.map

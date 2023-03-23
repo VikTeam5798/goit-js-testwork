@@ -557,7 +557,7 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"jxvOM":[function(require,module,exports) {
-// import "../css/common.css";
+var _commonCss = require("../css/common.css");
 /*
  * Метод setInterval(callback, delay, args)
  */ const logger = (time)=>console.log(`Лог каждые ${time}ms - ${Date.now()}`);
@@ -573,6 +573,6 @@ console.log("После вызова setInterval"); /*
  //   clearInterval(intervalId);
  // }
 
-},{}]},["ai7Wr","jxvOM"], "jxvOM", "parcelRequirea919")
+},{"../css/common.css":"9eCMt"}],"9eCMt":[function() {},{}]},["ai7Wr","jxvOM"], "jxvOM", "parcelRequirea919")
 
 //# sourceMappingURL=02-interval.b9bebdb7.js.map

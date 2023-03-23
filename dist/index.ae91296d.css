@@ -12,24 +12,27 @@ body {
 }
 
 .button-list {
-  gap: 15px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
 }
 
 .button-list__item {
-  color: #061389;
-  background-color: #2c75ff;
-  border: 1px solid #000;
-  padding: 10px 15px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 20px;
   text-decoration: none;
-  transition: background-color .25s linear, color .25s linear;
-  display: block;
+  transition: all .3s;
+  display: inline-block;
+  box-shadow: 0 2px 5px #0000004d;
 }
 
-.button-list__item:hover, .button-list__item:focus {
-  color: #2c75ff;
-  background-color: #061389;
+.button-list__item:hover {
+  background-color: #0069d9;
 }
 
 /*# sourceMappingURL=index.ae91296d.css.map */

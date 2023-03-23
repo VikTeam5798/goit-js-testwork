@@ -557,7 +557,7 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"9L92W":[function(require,module,exports) {
-// import "../css/common.css";
+var _commonCss = require("../css/common.css");
 /**
  * - Показываем и скрываем добавляя/удаляя класс is-visible
  * - Скрываем через определённое время
@@ -597,6 +597,6 @@ function onMouseEnter() {
     clearTimeout(timeoutId);
 }
 
-},{}]},["k1pKg","9L92W"], "9L92W", "parcelRequirea919")
+},{"../css/common.css":"9eCMt"}],"9eCMt":[function() {},{}]},["k1pKg","9L92W"], "9L92W", "parcelRequirea919")
 
 //# sourceMappingURL=03-notification.8daaa50d.js.map
