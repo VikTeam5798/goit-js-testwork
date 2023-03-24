@@ -18,8 +18,10 @@
   "homepage": "https://github.com/VikTeam5798/goit-js-testwork",
   "dependencies": {
     "joi": "^17.9.1",
+    "jquery": "^3.6.4",
     "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
+    "pug": "^3.0.2",
     "shortid": "^2.2.16",
     "validate-password": "^1.0.4"
   },

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head><link rel="stylesheet" href="/Modul-10-JS/01-fetch-api.7d460623.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTTP-запросы и Fetch API</title>
+    <link rel="stylesheet" href="/index.ae91296d.css">
+  </head>
+  <body>
+    <p><a class="button-list__item" href="/Modul-10-JS/index10.html">На главную</a></p>
+
+    <form class="form-inline search-form js-search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" name="query">
+      </div>
+
+      <button type="submit" class="btn btn-primary button-list__item">
+        Искать
+      </button>
+    </form>
+
+    <div class="js-card-container"></div>
+
+    <script src="/Modul-10-JS/01-fetch-api.8363b153.js" defer=""></script>
+  </body>
+</html>

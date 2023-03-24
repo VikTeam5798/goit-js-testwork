@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переменные, типы и ветвления</title>
+    <link rel="stylesheet" href="/index.ae91296d.css">
+  </head>
+  <body>
+    <ul class="button-list">
+      <li>
+        <a class="button-list__item" href="/index.html">Назад на Главную</a>
+      </li>
+      <li>
+        <a class="button-list__item" href="/Modul-1-JS/index1-CICLES.html">Модуль 1 (Ветвления и циклы)</a>
+      </li>
+    </ul>
+    <h1 class="primary-title">Модуль 1 (Переменные и ветвления)</h1>
+    <h2>Содержание</h2>
+    <ul>
+      <li>Выражения, инструкции и точка с запятой</li>
+      <li>Переменные: Объявление let и const</li>
+      <li>Получение данных от пользователя prompt и confirm</li>
+      <li>Числа</li>
+      <li>Мат. операторы Объекты Number и Math</li>
+      <li>Строки</li>
+      <li>Конкатенация</li>
+      <li>Шаблонные строки</li>
+      <li>Методы</li>
+      <li>Операторы сравнения</li>
+      <li>Логические операторы</li>
+      <li>Ветвления</li>
+      <li>Блочная область видимости переменных</li>
+    </ul>
+
+    <!-- <script src="./js/01-vars.js" type="module"></script> -->
+    <!-- <script src="./js/02-input.js" type="module"></script> -->
+    <!-- <script src="./js/03-numbers.js" type="module"></script> -->
+    <!-- <script src="./js/04-strings.js" type="module"></script> -->
+    <!-- <script src="./js/05-comparison-operators.js" type="module"></script> -->
+    <!-- <script src="./js/06-logical-operators.js" type="module"></script> -->
+    <!-- <script src="./js/06-1-segment.js" type="module"></script> -->
+    <!-- <script src="./js/06-2-chat.js" type="module"></script> -->
+    <!-- <script src="./js/06-3-subscription.js" type="module"></script> -->
+    <!-- <script src="./js/07-branching.js" type="module"></script> -->
+    <!-- <script src="./js/07-1-purchase.js" type="module"></script> -->
+    <!-- <script src="./js/07-2-discount.js" type="module"></script> -->
+  <script src="/index1.84e100b7.js"></script></body>
+</html>

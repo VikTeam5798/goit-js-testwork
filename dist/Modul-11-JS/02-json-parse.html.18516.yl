@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Безопасный JSON.parse()</title>
+    <link rel="stylesheet" href="/Modul-11-JS/01-try-catch.88e45b9d.css">
+    <link rel="stylesheet" href="/index.ae91296d.css">
+  </head>
+  <body>
+    <p><a class="button-list__item" href="/Modul-11-JS/index11.html">На главную</a></p>
+
+    <script src="/Modul-11-JS/02-json-parse.dfb39be5.js" defer=""></script>
+  </body>
+</html>

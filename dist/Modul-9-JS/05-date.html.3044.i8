@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Дата и время</title>
+    <link rel="stylesheet" href="/index.ae91296d.css">
+  </head>
+  <body>
+    <p><a class="button-list__item" href="/Modul-9-JS/index9.html">На главную</a></p>
+
+    <script src="/Modul-9-JS/05-date.c0a831a4.js" defer=""></script>
+  </body>
+</html>
