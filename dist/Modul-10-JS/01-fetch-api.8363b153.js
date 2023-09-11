@@ -601,16 +601,16 @@ const options = {
 };
 fetch(url, options).then((r)=>r.json()).then(console.log);
 
-},{"./get-refs":"82uYt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../css/common.css":"4VTf4","./api-service":"3qqTt"}],"82uYt":[function(require,module,exports) {
+},{"../css/common.css":"4VTf4","./api-service":"3qqTt","./get-refs":"82uYt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4VTf4":[function() {},{}],"3qqTt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-function getRefs() {
-    return {
-        cardContainer: document.querySelector(".js-card-container"),
-        searchForm: document.querySelector(".js-search-form")
-    };
+const BASE_URL = "https://pokeapi.co/api/v2";
+function fetchPokemon(pokemonId) {
+    return fetch(`${BASE_URL}/pokemon/${pokemonId}`).then((response)=>response.json());
 }
-exports.default = getRefs;
+exports.default = {
+    fetchPokemon
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -642,16 +642,16 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"4VTf4":[function() {},{}],"3qqTt":[function(require,module,exports) {
+},{}],"82uYt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const BASE_URL = "https://pokeapi.co/api/v2";
-function fetchPokemon(pokemonId) {
-    return fetch(`${BASE_URL}/pokemon/${pokemonId}`).then((response)=>response.json());
+function getRefs() {
+    return {
+        cardContainer: document.querySelector(".js-card-container"),
+        searchForm: document.querySelector(".js-search-form")
+    };
 }
-exports.default = {
-    fetchPokemon
-};
+exports.default = getRefs;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["5rzB7","h4ZzG"], "h4ZzG", "parcelRequirea919")
 
