@@ -3,9 +3,9 @@ body {
 }
 
 .palette {
-  max-width: 1200px;
   grid-gap: 12px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -26,8 +26,8 @@ body {
 }
 
 .color-swatch {
-  height: 128px;
   cursor: pointer;
+  height: 128px;
 }
 
 .color-meta {

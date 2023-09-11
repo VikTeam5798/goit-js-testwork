@@ -9,12 +9,12 @@ body {
 }
 
 .nav, .slider {
-  height: 100vh;
   text-align: center;
   background-color: #1e1f26;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   padding: 0 2em;
   display: flex;
   position: relative;
@@ -81,11 +81,11 @@ a {
 }
 
 .nav-container {
-  width: 100%;
-  min-height: 75px;
   z-index: 10;
   background: #1e1f26;
   flex-flow: wrap;
+  width: 100%;
+  min-height: 75px;
   transition: all .3s cubic-bezier(.19, 1, .22, 1);
   display: flex;
   position: absolute;
@@ -124,22 +124,15 @@ a {
 }
 
 .nav-tab-slider {
+  background: #03dac6;
   width: 0;
   height: 2px;
-  background: #03dac6;
   transition: left .3s;
   position: absolute;
   bottom: 0;
 }
 
-.background {
-  height: 90vh;
-  z-index: auto;
-  position: absolute;
-  inset: 0;
-}
-
-@media (min-width: 800px) {
+@media (width >= 800px) {
   .nav h1, .slider h1 {
     font-size: 5vw;
   }
@@ -149,7 +142,7 @@ a {
   }
 }
 
-@media (min-width: 360px) {
+@media (width >= 360px) {
   .nav h1, .slider h1 {
     font-size: 8vw;
   }
@@ -165,8 +158,8 @@ a {
 }
 
 .background {
-  height: 100vh;
   z-index: 0;
+  height: 100vh;
   position: absolute;
   inset: 0;
 }
